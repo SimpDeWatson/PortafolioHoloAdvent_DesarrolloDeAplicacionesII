@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 1000px;
+    background: #F5F6FA;
+    color: #1F2430;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 14px 32px;
+    border-bottom: 1px solid #E7E8EE;
+}
+
+.brand .logo, .brand.logo {
+    height: 36px;
+}
+
+.app-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.window-dots {
+    display: flex;
+    gap: 8px;
+    width: 36px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-red { background: #FF5F57; }
+.dot-yellow { background: #FEBC2E; }
+.dot-green { background: #28C840; }
+
+.menu-content {
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.menu-subtitle {
+    color: #6B7280;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.tarjeta {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #1F2430;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+}
+
+.tarjeta h2 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.tarjeta p {
+    margin: 0 0 18px 0;
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.tarjeta-link {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.tarjeta-morada .tarjeta-link { color: #4F46E5; }
+.tarjeta-verde .tarjeta-link { color: #059669; }
+
+.tarjeta-morada { border-top: 4px solid #4F46E5; }
+.tarjeta-verde { border-top: 4px solid #059669; }
+
+.footer {
+    text-align: center;
+    padding: 16px;
+    color: #6B7280;
+    font-size: 13px;
+    border-top: 1px solid #E7E8EE;
+    background: #ffffff;
+}

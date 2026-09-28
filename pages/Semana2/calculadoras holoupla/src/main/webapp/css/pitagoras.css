@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 1000px;
+    background: #F5F6FA;
+    color: #1F2430;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    padding: 14px 32px;
+    border-bottom: 1px solid #E7E8EE;
+}
+
+.brand .logo {
+    height: 36px;
+}
+
+.app-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.window-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-red { background: #FF5F57; }
+.dot-yellow { background: #FEBC2E; }
+.dot-green { background: #28C840; }
+
+.exit-icon {
+    color: #059669;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+.panel {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.panel-form h2 {
+    margin: 0 0 4px 0;
+    font-size: 22px;
+}
+
+.subtitle {
+    color: #6B7280;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+.input-row {
+    display: flex;
+    border: 1px solid #D9DBE3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.input-row input[type="number"] {
+    flex: 1;
+    border: none;
+    padding: 12px 14px;
+    font-size: 15px;
+    outline: none;
+}
+
+.unit-fixed {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    color: #6B7280;
+    font-size: 14px;
+    background: #F9FAFB;
+    border-left: 1px solid #D9DBE3;
+}
+
+.btn-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.btn-primary {
+    flex: 2;
+    padding: 14px;
+    background: #059669;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.btn-primary:hover {
+    background: #047857;
+}
+
+.btn-secondary {
+    flex: 1;
+    padding: 14px;
+    background: #ffffff;
+    color: #059669;
+    border: 1px solid #059669;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-secondary:hover {
+    background: #ECFDF5;
+}
+
+.topbar-right {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.btn-regresar-esquina {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #059669;
+    text-decoration: none;
+    background: #ECFDF5;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+}
+
+.btn-regresar-esquina:hover {
+    background: #D1FAE5;
+}
+
+.resultados {
+    margin-top: 20px;
+    background: #ECFDF5;
+    border-radius: 12px;
+    padding: 18px 20px;
+}
+
+.resultados-label {
+    color: #059669;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.res-nombre {
+    display: block;
+    color: #6B7280;
+    font-size: 13px;
+    margin: 10px 0 4px 0;
+}
+
+.res-valor {
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    color: #1F2430;
+}
+
+.panel-esquema h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.dibujo {
+    background: #ECFDF5;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px 0 18px 0;
+}
+
+.dibujo svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.formulas p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #374151;
+}
+
+.formulas-title {
+    color: #1F2430;
+    font-weight: 600;
+}
+
+.footer {
+    text-align: center;
+    padding: 16px;
+    color: #6B7280;
+    font-size: 13px;
+    border-top: 1px solid #E7E8EE;
+    background: #ffffff;
+}
+
+/* Botones Calcular y Limpiar lado a lado */
+.btn-row button {
+    flex: 1 1 0;
+    width: 50%;
+    min-width: 0;
+    font-family: inherit;
+}
+
+.btn-row .btn-primary { flex: 2 1 0; }
